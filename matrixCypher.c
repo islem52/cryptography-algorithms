@@ -6,7 +6,7 @@
 int** create_square_matrix(int dimention){
     int** matrix = (int**)malloc(dimention * sizeof(int*)); //array of row pointers
     for(int i =0 ; i <dimention ; i++){
-        matrix[i]= malloc(dimention * sizeof(int));//allocation of rows
+        matrix[i]= malloc(dimention * sizeof(int));//rows
     }
     return matrix;
 }
@@ -65,8 +65,7 @@ int determinant(int** matrix, int n) {
     return det;
 }
 
-// Function to check if a matrix is invertible
-// Vérifie si une matrice est inversible (seulement pour les matrices carrées)
+//check if a matrix is invertible(square matrix only)
 int matrix_inversible(int** matrix, int rows, int cols) {
     if (rows != cols) {
         printf("Erreur : La matrice n'est pas carrée, donc elle n'est pas inversible.\n");
