@@ -19,7 +19,7 @@ A collection of classical and modern cryptographic implementations in C and Pyth
 ### Asymmetric Encryption
 - **RSA.py** — RSA public-key cryptography. Two keys: one public (encrypt), one private (decrypt). Slow compared to symmetric encryption but solves the key-exchange problem.
 
-## Why This Matters
+## goal
 
 Breaking classical ciphers teaches you how attackers think. Understanding AES shows you how modern encryption actually works. RSA introduces the math behind public-key systems. Together, they cover the evolution and principles behind real-world cryptography.
 
